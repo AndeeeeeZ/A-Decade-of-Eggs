@@ -10,19 +10,23 @@ public class EggGenerator : MonoBehaviour
     [SerializeField]
     private GameObject EggParent;
 
-    // [SerializeField]
-    // private float eggSpeed;
+    [SerializeField]
+    private int maxEggAmount;
+
+    private int currentEggAmount;
 
     private List<GameObject> Eggs = new List<GameObject>();
     // private EggController lastEgg;
     public void ProduceEgg(Vector3 spawnLocation)
     {
-        if (Eggs.Count > 0)
+        if (currentEggAmount < maxEggAmount)
         {
-            Eggs[Eggs.Count - 1].GetComponent<EggController>().UnmarkAsLastEgg();
+            if (currentEggAmount > 0)
+                Eggs[Eggs.Count - 1].GetComponent<EggController>().UnmarkAsLastEgg();
+            GameObject egg = Instantiate(EggPrefab, spawnLocation, Quaternion.identity, EggParent.transform);
+            Eggs.Add(egg);
+            currentEggAmount++;
         }
-        GameObject egg = Instantiate(EggPrefab, spawnLocation, Quaternion.identity, EggParent.transform);
-        Eggs.Add(egg);
     }
 
     // Get last egg's position and destroy all eggs
@@ -36,13 +40,13 @@ public class EggGenerator : MonoBehaviour
         GameObject lastEgg = Eggs[Eggs.Count - 1];
         Vector3 pos = lastEgg.transform.position;
 
-        RemoveAllEggs(); 
+        RemoveAllEggs();
         return pos;
     }
 
     public void RemoveAllEggs()
     {
-        
+        currentEggAmount = 0; 
         for (int i = Eggs.Count - 1; i >= 0; i--)
         {
             GameObject tempEgg = Eggs[i];
@@ -53,9 +57,13 @@ public class EggGenerator : MonoBehaviour
 
     public bool HaveEggLeft()
     {
-        return Eggs.Count != 0;
+        return currentEggAmount - maxEggAmount != 0;
     }
 
+    public int GetCurrentEggAmount()
+    {
+        return currentEggAmount; 
+    }
 
 
     public void Move(int x)

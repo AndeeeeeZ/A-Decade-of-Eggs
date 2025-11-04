@@ -23,7 +23,6 @@ public class ChickenController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private bool isMoving, canJump, canJumpAgain;
     private Vector3 startingLocation;
-    private int eggAmount;
 
     private void Start()
     {
@@ -35,7 +34,6 @@ public class ChickenController : MonoBehaviour
         canJump = true;
         canJumpAgain = true;
         startingLocation = transform.position;
-        eggAmount = 3;
     }
 
     private void Update()
@@ -88,10 +86,9 @@ public class ChickenController : MonoBehaviour
         }
         else if (canJumpAgain)
         {
-            if (eggAmount > 0)
+            if (eggGenerator.HaveEggLeft())
             {
                 eggGenerator.ProduceEgg(spawnPoint.position);
-                eggAmount--;
                 rigidBody.linearVelocityY = 0f;
                 rigidBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
                 PlayOneFrom(dashClip);
@@ -114,7 +111,6 @@ public class ChickenController : MonoBehaviour
 
         rigidBody.linearVelocity = Vector2.zero;
         PlayOneFrom(dieClip);
-        eggAmount = 3;
     }
 
     private void OnCollisionStay2D(Collision2D collision)
@@ -134,7 +130,6 @@ public class ChickenController : MonoBehaviour
     public void BackToSpawnPoint()
     {
         transform.position = startingLocation;
-        eggAmount = 3; 
     }
     private void PlayOneFrom(AudioClip[] clips)
     {
