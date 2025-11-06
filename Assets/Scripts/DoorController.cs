@@ -20,8 +20,6 @@ public class DoorController : MonoBehaviour
             transform.position = Vector3.Lerp(transform.position, targetLocation, speed * Time.deltaTime);
         else
             rb.MovePosition(Vector3.MoveTowards(transform.position, targetLocation, speed * Time.deltaTime));
-        //rigidBody.MovePosition(Vector3.Lerp(transform.position, targetLocation, speed * Time.deltaTime));
-
     }
     public void OnButtonPressed()
     {
