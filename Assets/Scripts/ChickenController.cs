@@ -63,7 +63,8 @@ public class ChickenController : MonoBehaviour
             || Mathf.Sign(rigidBody.linearVelocityX) != Mathf.Sign(x))
             rigidBody.linearVelocityX = x * horizontalSpeed;
         isMoving = true;
-        animator.Play("Walking");
+        if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Rebirth"))
+            animator.Play("Walking");
         if (x == -1)
             spriteRenderer.flipX = true;
         if (x == 1)
@@ -72,14 +73,15 @@ public class ChickenController : MonoBehaviour
     public void StopHorizontalMovement()
     {
         isMoving = false;
-        animator.Play("Idle");
+        if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Rebirth"))
+            animator.Play("Idle");
     }
 
     public void Jump()
     {
         if (canJump)
         {
-            PerformJump(); 
+            PerformJump();
             PlayOneFrom(jumpClip);
             canJump = false;
         }
@@ -87,7 +89,7 @@ public class ChickenController : MonoBehaviour
         {
             if (eggGenerator.HaveEggLeft())
             {
-                PerformJump(); 
+                PerformJump();
                 eggGenerator.ProduceEgg(spawnPoint.position);
                 PlayOneFrom(dashClip);
             }
@@ -114,9 +116,12 @@ public class ChickenController : MonoBehaviour
     public void OnDie()
     {
         if (eggGenerator.GetCurrentEggAmount() == 0)
-            BackToSpawnPoint(); 
+            BackToSpawnPoint();
         else
+        {
+            animator.Play("Rebirth"); 
             transform.position = eggGenerator.GetLastEggPosition();
+        }
 
         rigidBody.linearVelocity = Vector2.zero;
         PlayOneFrom(dieClip);
