@@ -57,7 +57,7 @@ public class EggGenerator : MonoBehaviour
 
     public bool HaveEggLeft()
     {
-        return currentEggAmount - maxEggAmount != 0;
+        return maxEggAmount - currentEggAmount > 0;
     }
 
     public int GetCurrentEggAmount()

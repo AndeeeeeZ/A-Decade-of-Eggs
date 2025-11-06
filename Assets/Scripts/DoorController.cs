@@ -7,19 +7,20 @@ public class DoorController : MonoBehaviour
     [SerializeField]
     private float speed;
     private Vector3 targetLocation;
-    private Rigidbody2D rigidBody;
+    private Rigidbody2D rb;
 
     private void Start()
     {
         targetLocation = startLocation;
-        rigidBody = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
-    private void Update()
+    private void FixedUpdate()
     {
-        if (rigidBody == null)
+        if (rb == null)
             transform.position = Vector3.Lerp(transform.position, targetLocation, speed * Time.deltaTime);
         else
-            rigidBody.MovePosition(Vector3.Lerp(transform.position, targetLocation, speed * Time.deltaTime));
+            rb.MovePosition(Vector3.MoveTowards(transform.position, targetLocation, speed * Time.deltaTime));
+        //rigidBody.MovePosition(Vector3.Lerp(transform.position, targetLocation, speed * Time.deltaTime));
 
     }
     public void OnButtonPressed()

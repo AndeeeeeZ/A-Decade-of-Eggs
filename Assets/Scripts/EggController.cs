@@ -21,7 +21,7 @@ public class EggController : MonoBehaviour
 
     private void Update()
     {
-        CheckYVelocity();
+        // CheckYVelocity();
     }
     public void Move(int x)
     {

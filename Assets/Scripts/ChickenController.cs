@@ -79,8 +79,7 @@ public class ChickenController : MonoBehaviour
     {
         if (canJump)
         {
-            rigidBody.linearVelocityY = 0f;
-            rigidBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            PerformJump(); 
             PlayOneFrom(jumpClip);
             canJump = false;
         }
@@ -88,18 +87,28 @@ public class ChickenController : MonoBehaviour
         {
             if (eggGenerator.HaveEggLeft())
             {
+                PerformJump(); 
                 eggGenerator.ProduceEgg(spawnPoint.position);
-                rigidBody.linearVelocityY = 0f;
-                rigidBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
                 PlayOneFrom(dashClip);
+            }
+            else
+            {
+                if (Debugging)
+                    Debug.LogWarning("No more egg available");
             }
             canJumpAgain = false;
         }
         else
         {
             if (Debugging)
-                Debug.LogWarning("Player has jumped already");
+                Debug.LogWarning("Player can't jump again");
         }
+    }
+
+    private void PerformJump()
+    {
+        rigidBody.linearVelocityY = 0f;
+        rigidBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
     }
 
     public void OnDie()
@@ -131,6 +140,8 @@ public class ChickenController : MonoBehaviour
     {
         transform.position = startingLocation;
     }
+
+    // Play one audio clip from the clips array
     private void PlayOneFrom(AudioClip[] clips)
     {
         if (clips.Length == 0)
