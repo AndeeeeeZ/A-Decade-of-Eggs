@@ -113,8 +113,8 @@ public class ChickenController : MonoBehaviour
 
     public void OnDie()
     {
-        if (!eggGenerator.HaveEggLeft())
-            transform.position = startingLocation;
+        if (eggGenerator.GetCurrentEggAmount() == 0)
+            BackToSpawnPoint(); 
         else
             transform.position = eggGenerator.GetLastEggPosition();
 

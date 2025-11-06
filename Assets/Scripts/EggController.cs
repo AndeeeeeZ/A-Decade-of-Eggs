@@ -1,7 +1,4 @@
-using NUnit.Framework;
 using UnityEngine;
-using UnityEngine.Rendering;
-using UnityEngine.U2D;
 
 public class EggController : MonoBehaviour
 {
@@ -19,15 +16,10 @@ public class EggController : MonoBehaviour
         MarkAsLastEgg();
     }
 
-    private void Update()
-    {
-        // CheckYVelocity();
-    }
     public void Move(int x)
     {
         if (rigidBody2D == null)
         {
-            Debug.LogWarning("Missing rigidbody 2d");
             rigidBody2D = GetComponent<Rigidbody2D>();
             if (rigidBody2D == null)
             {

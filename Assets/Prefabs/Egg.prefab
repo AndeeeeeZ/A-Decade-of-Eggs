@@ -168,4 +168,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f610faba8da2eac47964ca6718431427, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eggSpeed: 3
+  eggSpeed: 5
