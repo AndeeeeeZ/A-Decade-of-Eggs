@@ -3818,8 +3818,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 171701618042908955, guid: 0c4a796fad4c69c4a856a4e20e589962, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6842873575726124448}
   m_SourcePrefab: {fileID: 100100000, guid: 0c4a796fad4c69c4a856a4e20e589962, type: 3}
+--- !u!1 &6842873575726124447 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 171701618042908955, guid: 0c4a796fad4c69c4a856a4e20e589962, type: 3}
+  m_PrefabInstance: {fileID: 6842873575726124446}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6842873575726124448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6842873575726124447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 922384e034eed7044aa9457e23b71f61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoNotDestroyOnLoad
 --- !u!1001 &8005898160258014174
 PrefabInstance:
   m_ObjectHideFlags: 0
