@@ -21,6 +21,7 @@ public class ChickenController : MonoBehaviour
     private Animator animator;
     private Rigidbody2D rigidBody;
     private SpriteRenderer spriteRenderer;
+    private ParticleSystem particle;
     private bool isMoving, canJump, canJumpAgain;
     private Vector3 startingLocation;
 
@@ -30,6 +31,7 @@ public class ChickenController : MonoBehaviour
         animator = GetComponent<Animator>();
         rigidBody = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        particle = GetComponent<ParticleSystem>();
         isMoving = false;
         canJump = true;
         canJumpAgain = true;
@@ -92,6 +94,7 @@ public class ChickenController : MonoBehaviour
                 PerformJump();
                 eggGenerator.ProduceEgg(spawnPoint.position);
                 PlayOneFrom(dashClip);
+                particle.Play();
             }
             else
             {
@@ -119,7 +122,7 @@ public class ChickenController : MonoBehaviour
             BackToSpawnPoint();
         else
         {
-            animator.Play("Rebirth"); 
+            animator.Play("Rebirth");
             transform.position = eggGenerator.GetLastEggPosition();
         }
 

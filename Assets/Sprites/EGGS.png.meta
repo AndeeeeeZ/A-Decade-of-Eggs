@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: dc1706e3d089c2c45ae2f21e51d06634
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1117794767985081521
+    second: EGGS_0
+  - first:
+      213: -7765588103586723449
+    second: EGGS_1
+  - first:
+      213: 4026029815377846239
+    second: EGGS_2
+  - first:
+      213: 7028987927331516730
+    second: EGGS_3
+  - first:
+      213: 985625330069240585
+    second: EGGS_4
+  - first:
+      213: 8845880689978240134
+    second: EGGS_5
+  - first:
+      213: 6464401674531857191
+    second: EGGS_6
+  - first:
+      213: 8231324742101101674
+    second: EGGS_7
+  - first:
+      213: -2737673833227231978
+    second: EGGS_8
+  - first:
+      213: 7198070103907610387
+    second: EGGS_9
+  - first:
+      213: -2695492127986731824
+    second: EGGS_10
+  - first:
+      213: -3128444876065038751
+    second: EGGS_11
+  - first:
+      213: 4557929116582872276
+    second: EGGS_12
+  - first:
+      213: 3482691271345839235
+    second: EGGS_13
+  - first:
+      213: -5636699806219430795
+    second: EGGS_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EGGS_0
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 2017
+        width: 987
+        height: 357
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f438572b49bcc70f0800000000000000
+      internalID: -1117794767985081521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EGGS_1
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 2014
+        width: 987
+        height: 352
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 789c6bd73c61b3490800000000000000
+      internalID: -7765588103586723449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EGGS_2
+      rect:
+        serializedVersion: 2
+        x: 2945
+        y: 2358
+        width: 19
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdf5ab849c45fd730800000000000000
+      internalID: 4026029815377846239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EGGS_3
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 2010
+        width: 985
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a31ba1b574bfb8160800000000000000
+      internalID: 7028987927331516730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EGGS_4
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 1619
+        width: 987
+        height: 352
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90b77600405adad00800000000000000
+      internalID: 985625330069240585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EGGS_5
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 1614
+        width: 987
+        height: 352
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68ce3abbe91e2ca70800000000000000
+      internalID: 8845880689978240134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EGGS_6
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 1215
+        width: 987
+        height: 352
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72369e7b21b26b950800000000000000
+      internalID: 6464401674531857191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EGGS_7
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 1210
+        width: 987
+        height: 352
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6ce1d3dd3a8b3270800000000000000
+      internalID: 8231324742101101674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EGGS_8
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 820
+        width: 987
+        height: 352
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61ddb9b4724d10ad0800000000000000
+      internalID: -2737673833227231978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EGGS_9
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 815
+        width: 987
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31fa5cb5f9ea4e360800000000000000
+      internalID: 7198070103907610387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EGGS_10
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 421
+        width: 987
+        height: 352
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d43d70e030b79ad0800000000000000
+      internalID: -2695492127986731824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EGGS_11
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 416
+        width: 987
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16e90ced5f78594d0800000000000000
+      internalID: -3128444876065038751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EGGS_12
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 22
+        width: 987
+        height: 352
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d40551f164014f30800000000000000
+      internalID: 4557929116582872276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EGGS_13
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 359
+        width: 19
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38c1cea5241055030800000000000000
+      internalID: 3482691271345839235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EGGS_14
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 17
+        width: 987
+        height: 332
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57417c8046b66c1b0800000000000000
+      internalID: -5636699806219430795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4cd1a8d968ea6744281e2081f6dff8d9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      EGGS_0: -1117794767985081521
+      EGGS_1: -7765588103586723449
+      EGGS_10: -2695492127986731824
+      EGGS_11: -3128444876065038751
+      EGGS_12: 4557929116582872276
+      EGGS_13: 3482691271345839235
+      EGGS_14: -5636699806219430795
+      EGGS_2: 4026029815377846239
+      EGGS_3: 7028987927331516730
+      EGGS_4: 985625330069240585
+      EGGS_5: 8845880689978240134
+      EGGS_6: 6464401674531857191
+      EGGS_7: 8231324742101101674
+      EGGS_8: -2737673833227231978
+      EGGS_9: 7198070103907610387
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
