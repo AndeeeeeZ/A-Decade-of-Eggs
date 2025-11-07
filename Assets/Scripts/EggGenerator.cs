@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine.UI; 
 
 public class EggGenerator : MonoBehaviour
 {
@@ -13,10 +14,21 @@ public class EggGenerator : MonoBehaviour
     [SerializeField]
     private int maxEggAmount;
 
+    [SerializeField]
+    private Image eggCountIndicator;
+
+    [SerializeField]
+    private Sprite[] eggCountSprites;
+
     private int currentEggAmount;
 
     private List<GameObject> Eggs = new List<GameObject>();
     // private EggController lastEgg;
+
+    private void Start()
+    {
+        UpdateEggCountIndicator();
+    }
     public void ProduceEgg(Vector3 spawnLocation)
     {
         if (currentEggAmount < maxEggAmount)
@@ -27,6 +39,7 @@ public class EggGenerator : MonoBehaviour
             Eggs.Add(egg);
             currentEggAmount++;
         }
+        UpdateEggCountIndicator();
     }
 
     // Get last egg's position and destroy all eggs
@@ -46,13 +59,14 @@ public class EggGenerator : MonoBehaviour
 
     public void RemoveAllEggs()
     {
-        currentEggAmount = 0; 
+        currentEggAmount = 0;
         for (int i = Eggs.Count - 1; i >= 0; i--)
         {
             GameObject tempEgg = Eggs[i];
             Eggs.Remove(tempEgg);
             Destroy(tempEgg);
         }
+        UpdateEggCountIndicator();
     }
 
     public bool HaveEggLeft()
@@ -62,7 +76,7 @@ public class EggGenerator : MonoBehaviour
 
     public int GetCurrentEggAmount()
     {
-        return currentEggAmount; 
+        return currentEggAmount;
     }
 
 
@@ -71,6 +85,14 @@ public class EggGenerator : MonoBehaviour
         for (int i = 0; i < Eggs.Count(); i++)
         {
             Eggs[i].GetComponent<EggController>().Move(x);
+        }
+    }
+
+    private void UpdateEggCountIndicator()
+    {
+        if (eggCountIndicator != null)
+        {
+            eggCountIndicator.sprite = eggCountSprites[maxEggAmount - currentEggAmount]; 
         }
     }
 }
