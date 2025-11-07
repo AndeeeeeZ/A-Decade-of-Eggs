@@ -1,52 +1,52 @@
 fileFormatVersion: 2
-guid: dc1706e3d089c2c45ae2f21e51d06634
+guid: 575e8d4c527ca3e42be5ab24f68f103f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1117794767985081521
-    second: EGGS_0
+      213: 7093365131244789720
+    second: EGGS 1_0
   - first:
-      213: -7765588103586723449
-    second: EGGS_1
+      213: 7067585858436545173
+    second: EGGS 1_1
   - first:
-      213: 4026029815377846239
-    second: EGGS_2
+      213: -1906823214145589060
+    second: EGGS 1_2
   - first:
-      213: 7028987927331516730
-    second: EGGS_3
+      213: -4538862666753437787
+    second: EGGS 1_3
   - first:
-      213: 985625330069240585
-    second: EGGS_4
+      213: -2340136248868382738
+    second: EGGS 1_4
   - first:
-      213: 8845880689978240134
-    second: EGGS_5
+      213: 2705748221877149749
+    second: EGGS 1_5
   - first:
-      213: 6464401674531857191
-    second: EGGS_6
+      213: -7614098362293389129
+    second: EGGS 1_6
   - first:
-      213: 8231324742101101674
-    second: EGGS_7
+      213: 3175947251167713926
+    second: EGGS 1_7
   - first:
-      213: -2737673833227231978
-    second: EGGS_8
+      213: -2784347867159295011
+    second: EGGS 1_8
   - first:
-      213: 7198070103907610387
-    second: EGGS_9
+      213: -4787626217987098814
+    second: EGGS 1_9
   - first:
-      213: -2695492127986731824
-    second: EGGS_10
+      213: -3710171913151384961
+    second: EGGS 1_10
   - first:
-      213: -3128444876065038751
-    second: EGGS_11
+      213: -5470324924697654473
+    second: EGGS 1_11
   - first:
-      213: 4557929116582872276
-    second: EGGS_12
+      213: 5202279263738267774
+    second: EGGS 1_12
   - first:
-      213: 3482691271345839235
-    second: EGGS_13
+      213: -8011542860916531598
+    second: EGGS 1_13
   - first:
-      213: -5636699806219430795
-    second: EGGS_14
+      213: 9208540047937570357
+    second: EGGS 1_14
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -79,7 +79,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -158,20 +158,20 @@ TextureImporter:
       name: EGGS_0
       rect:
         serializedVersion: 2
-        x: 149
-        y: 2017
-        width: 987
-        height: 357
+        x: 0
+        y: 2000
+        width: 1200
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f438572b49bcc70f0800000000000000
-      internalID: -1117794767985081521
+      spriteID: 864280fb4648f794ea497f5bae33b210
+      internalID: 581353600
       vertices: []
       indices: 
       edges: []
@@ -180,20 +180,20 @@ TextureImporter:
       name: EGGS_1
       rect:
         serializedVersion: 2
-        x: 1347
-        y: 2014
-        width: 987
-        height: 352
+        x: 1200
+        y: 2000
+        width: 1200
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 789c6bd73c61b3490800000000000000
-      internalID: -7765588103586723449
+      spriteID: 844bc5143e6058d4e999173d835a948e
+      internalID: 589894949
       vertices: []
       indices: 
       edges: []
@@ -202,20 +202,20 @@ TextureImporter:
       name: EGGS_2
       rect:
         serializedVersion: 2
-        x: 2945
-        y: 2358
-        width: 19
-        height: 6
+        x: 2400
+        y: 2000
+        width: 1200
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fdf5ab849c45fd730800000000000000
-      internalID: 4026029815377846239
+      spriteID: eda89e2128410a142b5e249bb4fcdf14
+      internalID: -1055661115
       vertices: []
       indices: 
       edges: []
@@ -224,20 +224,20 @@ TextureImporter:
       name: EGGS_3
       rect:
         serializedVersion: 2
-        x: 2540
-        y: 2010
-        width: 985
-        height: 350
+        x: 0
+        y: 1600
+        width: 1200
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a31ba1b574bfb8160800000000000000
-      internalID: 7028987927331516730
+      spriteID: 846882fc0978c884ab0500ba1c235d4a
+      internalID: 2010479931
       vertices: []
       indices: 
       edges: []
@@ -246,20 +246,20 @@ TextureImporter:
       name: EGGS_4
       rect:
         serializedVersion: 2
-        x: 142
-        y: 1619
-        width: 987
-        height: 352
+        x: 1200
+        y: 1600
+        width: 1200
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 90b77600405adad00800000000000000
-      internalID: 985625330069240585
+      spriteID: 7ffa52c2e34f25f49bc77b04a5697cfd
+      internalID: 681506994
       vertices: []
       indices: 
       edges: []
@@ -268,20 +268,20 @@ TextureImporter:
       name: EGGS_5
       rect:
         serializedVersion: 2
-        x: 1347
-        y: 1614
-        width: 987
-        height: 352
+        x: 0
+        y: 1200
+        width: 1200
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 68ce3abbe91e2ca70800000000000000
-      internalID: 8845880689978240134
+      spriteID: c9c29336172b8614dbad4397caf30fd1
+      internalID: 943776856
       vertices: []
       indices: 
       edges: []
@@ -290,20 +290,20 @@ TextureImporter:
       name: EGGS_6
       rect:
         serializedVersion: 2
-        x: 142
-        y: 1215
-        width: 987
-        height: 352
+        x: 1200
+        y: 1200
+        width: 1200
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 72369e7b21b26b950800000000000000
-      internalID: 6464401674531857191
+      spriteID: 1a6c2747601b9004e981f1673a4cbec8
+      internalID: -552427042
       vertices: []
       indices: 
       edges: []
@@ -312,20 +312,20 @@ TextureImporter:
       name: EGGS_7
       rect:
         serializedVersion: 2
-        x: 1347
-        y: 1210
-        width: 987
-        height: 352
+        x: 0
+        y: 800
+        width: 1200
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a6ce1d3dd3a8b3270800000000000000
-      internalID: 8231324742101101674
+      spriteID: b0609a8b663ee184a88cece9eb2175a5
+      internalID: 588272621
       vertices: []
       indices: 
       edges: []
@@ -334,20 +334,20 @@ TextureImporter:
       name: EGGS_8
       rect:
         serializedVersion: 2
-        x: 143
-        y: 820
-        width: 987
-        height: 352
+        x: 1200
+        y: 800
+        width: 1200
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 61ddb9b4724d10ad0800000000000000
-      internalID: -2737673833227231978
+      spriteID: 4640fc45f9b489f43ad4cd2c66204004
+      internalID: -449490854
       vertices: []
       indices: 
       edges: []
@@ -356,20 +356,20 @@ TextureImporter:
       name: EGGS_9
       rect:
         serializedVersion: 2
-        x: 1347
-        y: 815
-        width: 987
-        height: 350
+        x: 0
+        y: 400
+        width: 1200
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 31fa5cb5f9ea4e360800000000000000
-      internalID: 7198070103907610387
+      spriteID: a3f2cdd3ec1e0b540b85205c8d836029
+      internalID: 881467732
       vertices: []
       indices: 
       edges: []
@@ -378,20 +378,20 @@ TextureImporter:
       name: EGGS_10
       rect:
         serializedVersion: 2
-        x: 142
-        y: 421
-        width: 987
-        height: 352
+        x: 1200
+        y: 400
+        width: 1200
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0d43d70e030b79ad0800000000000000
-      internalID: -2695492127986731824
+      spriteID: bcfc99536a298ab40a46f45270cf2b57
+      internalID: -644751754
       vertices: []
       indices: 
       edges: []
@@ -400,20 +400,20 @@ TextureImporter:
       name: EGGS_11
       rect:
         serializedVersion: 2
-        x: 1347
-        y: 416
-        width: 987
-        height: 350
+        x: 0
+        y: 0
+        width: 1200
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 16e90ced5f78594d0800000000000000
-      internalID: -3128444876065038751
+      spriteID: 9648f83bf7dc5d34199197d92ba6719f
+      internalID: 88287397
       vertices: []
       indices: 
       edges: []
@@ -422,64 +422,20 @@ TextureImporter:
       name: EGGS_12
       rect:
         serializedVersion: 2
-        x: 142
-        y: 22
-        width: 987
-        height: 352
+        x: 1200
+        y: 0
+        width: 1200
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4d40551f164014f30800000000000000
-      internalID: 4557929116582872276
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EGGS_13
-      rect:
-        serializedVersion: 2
-        x: 1743
-        y: 359
-        width: 19
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 38c1cea5241055030800000000000000
-      internalID: 3482691271345839235
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EGGS_14
-      rect:
-        serializedVersion: 2
-        x: 1347
-        y: 17
-        width: 987
-        height: 332
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 57417c8046b66c1b0800000000000000
-      internalID: -5636699806219430795
+      spriteID: eb190ef6aaf43d5459c05ae64c7280c1
+      internalID: -2057199567
       vertices: []
       indices: 
       edges: []
@@ -488,7 +444,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4cd1a8d968ea6744281e2081f6dff8d9
+    spriteID: 211ffdd817db32648bbb72729e9bf249
     internalID: 0
     vertices: []
     indices: 
@@ -496,23 +452,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":6.0},"gridSpriteSize":{"x":1200.0,"y":400.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      EGGS_0: -1117794767985081521
-      EGGS_1: -7765588103586723449
-      EGGS_10: -2695492127986731824
-      EGGS_11: -3128444876065038751
-      EGGS_12: 4557929116582872276
-      EGGS_13: 3482691271345839235
-      EGGS_14: -5636699806219430795
-      EGGS_2: 4026029815377846239
-      EGGS_3: 7028987927331516730
-      EGGS_4: 985625330069240585
-      EGGS_5: 8845880689978240134
-      EGGS_6: 6464401674531857191
-      EGGS_7: 8231324742101101674
-      EGGS_8: -2737673833227231978
-      EGGS_9: 7198070103907610387
+      EGGS_0: 581353600
+      EGGS_1: 589894949
+      EGGS_10: -644751754
+      EGGS_11: 88287397
+      EGGS_12: -2057199567
+      EGGS_2: -1055661115
+      EGGS_3: 2010479931
+      EGGS_4: 681506994
+      EGGS_5: 943776856
+      EGGS_6: -552427042
+      EGGS_7: 588272621
+      EGGS_8: -449490854
+      EGGS_9: 881467732
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

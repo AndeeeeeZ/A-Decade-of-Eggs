@@ -416,6 +416,21 @@ MonoBehaviour:
   EggPrefab: {fileID: 240797557305359956, guid: 8d5a62db2d0f538449bdb143ba4d8a00, type: 3}
   EggParent: {fileID: 0}
   maxEggAmount: 0
+  eggCountIndicator: {fileID: 0}
+  eggCountSprites:
+  - {fileID: -1055661115, guid: 575e8d4c527ca3e42be5ab24f68f103f, type: 3}
+  - {fileID: -2057199567, guid: 575e8d4c527ca3e42be5ab24f68f103f, type: 3}
+  - {fileID: -644751754, guid: 575e8d4c527ca3e42be5ab24f68f103f, type: 3}
+  - {fileID: -449490854, guid: 575e8d4c527ca3e42be5ab24f68f103f, type: 3}
+  - {fileID: -552427042, guid: 575e8d4c527ca3e42be5ab24f68f103f, type: 3}
+  - {fileID: 681506994, guid: 575e8d4c527ca3e42be5ab24f68f103f, type: 3}
+  - {fileID: 589894949, guid: 575e8d4c527ca3e42be5ab24f68f103f, type: 3}
+  - {fileID: 88287397, guid: 575e8d4c527ca3e42be5ab24f68f103f, type: 3}
+  - {fileID: 881467732, guid: 575e8d4c527ca3e42be5ab24f68f103f, type: 3}
+  - {fileID: 588272621, guid: 575e8d4c527ca3e42be5ab24f68f103f, type: 3}
+  - {fileID: 943776856, guid: 575e8d4c527ca3e42be5ab24f68f103f, type: 3}
+  - {fileID: 2010479931, guid: 575e8d4c527ca3e42be5ab24f68f103f, type: 3}
+  - {fileID: 581353600, guid: 575e8d4c527ca3e42be5ab24f68f103f, type: 3}
 --- !u!70 &5241937837571908681
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
