@@ -579,7 +579,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TRY PRESSING THIS ARROW ->
+  m_text: TRY PRESSING THIS BUTTON ->
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 27f9216e72a2fb4469b6164585c3d9c9, type: 2}
   m_sharedMaterial: {fileID: 6319452051135739162, guid: 27f9216e72a2fb4469b6164585c3d9c9, type: 2}
@@ -3445,7 +3445,7 @@ PrefabInstance:
       objectReference: {fileID: 1447854110}
     - target: {fileID: 4385047074368890816, guid: 5260b7c00b4f2c448acb8eb74e526a62, type: 3}
       propertyPath: maxEggAmount
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4385047074368890816, guid: 5260b7c00b4f2c448acb8eb74e526a62, type: 3}
       propertyPath: eggCountIndicator

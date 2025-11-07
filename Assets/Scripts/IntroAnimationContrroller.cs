@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
@@ -17,6 +18,11 @@ public class IntroAnimationContrroller : MonoBehaviour
     }
 
     private void OnVideoEnd(VideoPlayer vp)
+    {
+        SceneManager.LoadScene(SceneName);
+    }
+
+    public void ToNextScene()
     {
         SceneManager.LoadScene(SceneName);
     }
