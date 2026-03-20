@@ -667,10 +667,6 @@ PrefabInstance:
       propertyPath: TransitionOutDone.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1259699817}
-    - target: {fileID: 374479094271060161, guid: 0b1f628ee801dcc4fb37c541fa01292d, type: 3}
-      propertyPath: TransitionOutDone.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnTransitionOutDone
-      objectReference: {fileID: 0}
     - target: {fileID: 5111290786122313844, guid: 0b1f628ee801dcc4fb37c541fa01292d, type: 3}
       propertyPath: m_Name
       value: TransitionCanvas
