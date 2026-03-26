@@ -40,18 +40,18 @@ public class InputManager : MonoBehaviour
 
     private void EggsInputUpdate()
     {
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            eggGenerator.Move(1);
-        }
-        else if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            eggGenerator.Move(-1);
-        }
-        else
-        {
-            eggGenerator.Move(0);
-        }
+        // if (Input.GetKey(KeyCode.RightArrow))
+        // {
+        //     eggGenerator.Move(1);
+        // }
+        // else if (Input.GetKey(KeyCode.LeftArrow))
+        // {
+        //     eggGenerator.Move(-1);
+        // }
+        // else
+        // {
+        //     eggGenerator.Move(0);
+        // }
     }
 
     public void EnableInput()

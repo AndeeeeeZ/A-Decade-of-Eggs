@@ -7,8 +7,12 @@ public class ChickenController : MonoBehaviour
     [SerializeField] private EggGenerator eggGenerator;
     [SerializeField] private AudioClip[] jumpClip, dashClip, dieClip;
     [SerializeField] private Transform spawnPoint;
-    [SerializeField] private float jumpForce, horizontalSpeed, dashSpeed, returnToNormalVelocitySpeed, returnToZeroVelocitySpeed;
-
+    [SerializeField]
+    private float jumpForce,
+                  horizontalSpeed,
+                  dashSpeed,
+                  returnToNormalVelocitySpeed,
+                  returnToZeroVelocitySpeed;
     private AudioSource audioSource;
     private Animator animator;
     private Rigidbody2D rigidBody;
@@ -29,6 +33,7 @@ public class ChickenController : MonoBehaviour
     }
     private void Start()
     {
+        startingLocation = transform.position; 
         ResetToStart();
     }
 
@@ -37,7 +42,7 @@ public class ChickenController : MonoBehaviour
         isMoving = false;
         canJump = true;
         canJumpAgain = true;
-        startingLocation = transform.position;
+        transform.position = startingLocation;
     }
 
     private void OnEnable()
@@ -162,7 +167,7 @@ public class ChickenController : MonoBehaviour
         // Respawn at the start location if there is no eggs left
         // Respawn at the last egg if one exists
         if (eggGenerator.GetCurrentEggAmount() == 0)
-            BackToSpawnPoint();
+            ResetToStart(); 
         else
         {
             animator.Play("Rebirth");
@@ -186,11 +191,6 @@ public class ChickenController : MonoBehaviour
         canJumpAgain = true;
         if (Debugging)
             Debug.Log("Player is touching floor");
-    }
-
-    public void BackToSpawnPoint()
-    {
-        ResetToStart();
     }
 
     // Play one audio clip from the clips array
