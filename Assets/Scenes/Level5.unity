@@ -4460,21 +4460,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: RestartCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 1101865719803309687, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+    - target: {fileID: 4417756905662738427, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
+      propertyPath: Restart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 741474617}
-    - target: {fileID: 1101865719803309687, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+    - target: {fileID: 4417756905662738427, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
+      propertyPath: Restart.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 741474614}
-    - target: {fileID: 1101865719803309687, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+    - target: {fileID: 4417756905662738427, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
+      propertyPath: Restart.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: RemoveAllEggs
       objectReference: {fileID: 0}
-    - target: {fileID: 1101865719803309687, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: BackToSpawnPoint
+    - target: {fileID: 4417756905662738427, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
+      propertyPath: Restart.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ResetToStart
       objectReference: {fileID: 0}
     - target: {fileID: 7248910984319239748, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
       propertyPath: m_Pivot.x
@@ -4894,7 +4894,6 @@ SceneRoots:
   - {fileID: 1123782271}
   - {fileID: 2639941611081575874}
   - {fileID: 667993538}
-  - {fileID: 1425790533}
   - {fileID: 1093304657}
   - {fileID: 6821429387517603061}
   - {fileID: 1527601797}
@@ -4902,3 +4901,4 @@ SceneRoots:
   - {fileID: 3361269217916370886}
   - {fileID: 1980118629}
   - {fileID: 1592899976}
+  - {fileID: 1425790533}

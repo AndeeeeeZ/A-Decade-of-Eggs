@@ -615,17 +615,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b24430bb53887f4a89ecb92bb50d6ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &741474617 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4385047074368890816, guid: 5260b7c00b4f2c448acb8eb74e526a62, type: 3}
-  m_PrefabInstance: {fileID: 2639941611081575874}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8dc0ffb06715e54a8c9e1d0872d0639, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &804127443
 GameObject:
   m_ObjectHideFlags: 0
@@ -3806,14 +3795,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: RestartCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 1101865719803309687, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 741474617}
-    - target: {fileID: 1101865719803309687, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+    - target: {fileID: 4417756905662738427, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
+      propertyPath: Restart.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4417756905662738427, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
+      propertyPath: Restart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 741474614}
+    - target: {fileID: 4417756905662738427, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
+      propertyPath: Restart.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResetToStart
+      objectReference: {fileID: 0}
+    - target: {fileID: 4417756905662738427, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
+      propertyPath: Restart.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ChickenController, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 7248910984319239748, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
       propertyPath: m_Pivot.x
       value: 0

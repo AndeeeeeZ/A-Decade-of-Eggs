@@ -3530,14 +3530,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: RestartCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 1101865719803309687, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+    - target: {fileID: 4417756905662738427, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
+      propertyPath: Restart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 741474617}
-    - target: {fileID: 1101865719803309687, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+    - target: {fileID: 4417756905662738427, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
+      propertyPath: Restart.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 741474614}
+    - target: {fileID: 4417756905662738427, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
+      propertyPath: Restart.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RemoveAllEggs
+      objectReference: {fileID: 0}
+    - target: {fileID: 4417756905662738427, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
+      propertyPath: Restart.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ResetToStart
+      objectReference: {fileID: 0}
     - target: {fileID: 7248910984319239748, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
       propertyPath: m_Pivot.x
       value: 0

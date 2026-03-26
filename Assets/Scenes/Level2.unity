@@ -528,18 +528,42 @@ PrefabInstance:
     - target: {fileID: 1101865719803309687, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 741474617}
+      objectReference: {fileID: 519536516}
     - target: {fileID: 1101865719803309687, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 741474614}
     - target: {fileID: 1101865719803309687, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: RemoveAllEggs
+      value: ToRestart
       objectReference: {fileID: 0}
     - target: {fileID: 1101865719803309687, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: BackToSpawnPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 4417756905662738427, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
+      propertyPath: Restart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 741474614}
+    - target: {fileID: 4417756905662738427, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
+      propertyPath: Restart.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 741474617}
+    - target: {fileID: 4417756905662738427, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
+      propertyPath: Restart.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResetToStart
+      objectReference: {fileID: 0}
+    - target: {fileID: 4417756905662738427, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
+      propertyPath: Restart.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: RemoveAllEggs
+      objectReference: {fileID: 0}
+    - target: {fileID: 4417756905662738427, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
+      propertyPath: Restart.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ChickenController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4417756905662738427, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
+      propertyPath: Restart.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: EggGenerator, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7248910984319239748, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
       propertyPath: m_Pivot.x
@@ -626,6 +650,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
+--- !u!114 &519536516 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4417756905662738427, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
+  m_PrefabInstance: {fileID: 519536515}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cf39b59f49b82c48b8c26dad21f2185, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RestartHelper
 --- !u!1001 &526644178
 PrefabInstance:
   m_ObjectHideFlags: 0

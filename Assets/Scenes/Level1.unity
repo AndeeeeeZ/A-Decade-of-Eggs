@@ -3608,6 +3608,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1976480847 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4417756905662738427, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
+  m_PrefabInstance: {fileID: 8005898160258014174}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cf39b59f49b82c48b8c26dad21f2185, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RestartHelper
 --- !u!1 &2053025393
 GameObject:
   m_ObjectHideFlags: 0
@@ -4109,11 +4120,27 @@ PrefabInstance:
     - target: {fileID: 1101865719803309687, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 741474617}
+      objectReference: {fileID: 1976480847}
     - target: {fileID: 1101865719803309687, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 741474614}
+    - target: {fileID: 4417756905662738427, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
+      propertyPath: Restart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 741474617}
+    - target: {fileID: 4417756905662738427, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
+      propertyPath: Restart.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 741474614}
+    - target: {fileID: 4417756905662738427, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
+      propertyPath: Restart.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RemoveAllEggs
+      objectReference: {fileID: 0}
+    - target: {fileID: 4417756905662738427, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
+      propertyPath: Restart.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ResetToStart
+      objectReference: {fileID: 0}
     - target: {fileID: 7248910984319239748, guid: bfe5a20e71e511d408ac7bf70f80aeca, type: 3}
       propertyPath: m_Pivot.x
       value: 0
