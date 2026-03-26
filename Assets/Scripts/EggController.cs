@@ -2,37 +2,26 @@ using UnityEngine;
 
 public class EggController : MonoBehaviour
 {
-    [SerializeField]
-    private float eggSpeed;
+    [SerializeField] private float eggSpeed;
     private Rigidbody2D rigidBody2D;
     private SpriteRenderer spriteRenderer;
     private Color originalColor;
 
-    private void Start()
+    private void Awake()
     {
         rigidBody2D = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
+    private void Start()
+    {
         originalColor = spriteRenderer.color;
         MarkAsLastEgg();
     }
 
     public void Move(int x)
     {
-        if (rigidBody2D == null)
-        {
-            rigidBody2D = GetComponent<Rigidbody2D>();
-            if (rigidBody2D == null)
-            {
-                Debug.LogWarning("Unable to get egg's rigidbody"); 
-            }
-        }
         rigidBody2D.linearVelocityX = x * eggSpeed;
-    }
-
-    private void CheckYVelocity()
-    {
-        if (rigidBody2D.linearVelocityY > 0f)
-            rigidBody2D.linearVelocityY = 0f;
     }
 
     public void MarkAsLastEgg()

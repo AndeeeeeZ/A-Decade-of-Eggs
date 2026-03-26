@@ -2,17 +2,19 @@ using UnityEngine;
 
 public class DoorController : MonoBehaviour
 {
-    [SerializeField]
-    private Vector3 startLocation, endLocation;
-    [SerializeField]
-    private float speed;
+    [SerializeField] private Vector3 startLocation, endLocation;
+    [SerializeField] private float speed;
     private Vector3 targetLocation;
     private Rigidbody2D rb;
+
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
 
     private void Start()
     {
         targetLocation = startLocation;
-        rb = GetComponent<Rigidbody2D>();
     }
     private void FixedUpdate()
     {
@@ -25,7 +27,6 @@ public class DoorController : MonoBehaviour
     {
         targetLocation = endLocation;
     }
-
     public void OnButtonUnpressed()
     {
         targetLocation = startLocation;

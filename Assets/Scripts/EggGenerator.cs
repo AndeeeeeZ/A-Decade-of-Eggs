@@ -1,29 +1,24 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine.UI; 
+using UnityEngine.UI;
 
 public class EggGenerator : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject EggPrefab;
+    [SerializeField] private GameObject EggPrefab;
 
-    [SerializeField]
-    private GameObject EggParent;
+    // Use for hierarchy organization
+    [SerializeField] private GameObject EggParent;
 
-    [SerializeField]
-    private int maxEggAmount;
+    [SerializeField] private int maxEggAmount;
 
-    [SerializeField]
-    private Image eggCountIndicator;
+    [SerializeField] private Image eggCountIndicator;
 
-    [SerializeField]
-    private Sprite[] eggCountSprites;
+    [SerializeField] private Sprite[] eggCountSprites;
 
     private int currentEggAmount;
 
     private List<GameObject> Eggs = new List<GameObject>();
-    // private EggController lastEgg;
 
     private void Start()
     {
@@ -31,14 +26,15 @@ public class EggGenerator : MonoBehaviour
     }
     public void ProduceEgg(Vector3 spawnLocation)
     {
-        if (currentEggAmount < maxEggAmount)
-        {
-            if (currentEggAmount > 0)
-                Eggs[Eggs.Count - 1].GetComponent<EggController>().UnmarkAsLastEgg();
-            GameObject egg = Instantiate(EggPrefab, spawnLocation, Quaternion.identity, EggParent.transform);
-            Eggs.Add(egg);
-            currentEggAmount++;
-        }
+        if (currentEggAmount >= maxEggAmount)
+            return;
+
+        UnmarkLastEgg();
+
+        GameObject egg = Instantiate(EggPrefab, spawnLocation, Quaternion.identity, EggParent.transform);
+        Eggs.Add(egg);
+        currentEggAmount++;
+
         UpdateEggCountIndicator();
     }
 
@@ -79,7 +75,7 @@ public class EggGenerator : MonoBehaviour
         return currentEggAmount;
     }
 
-
+    // Move all eggs together
     public void Move(int x)
     {
         for (int i = 0; i < Eggs.Count(); i++)
@@ -92,7 +88,13 @@ public class EggGenerator : MonoBehaviour
     {
         if (eggCountIndicator != null)
         {
-            eggCountIndicator.sprite = eggCountSprites[maxEggAmount - currentEggAmount]; 
+            eggCountIndicator.sprite = eggCountSprites[maxEggAmount - currentEggAmount];
         }
+    }
+
+    private void UnmarkLastEgg()
+    {
+        if (currentEggAmount > 0)
+            Eggs[Eggs.Count - 1].GetComponent<EggController>().UnmarkAsLastEgg();
     }
 }

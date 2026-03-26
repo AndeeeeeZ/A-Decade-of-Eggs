@@ -6,23 +6,20 @@ public class ButtonController : MonoBehaviour
     public UnityEvent OnButtonPressed;
     public UnityEvent OnButtonUnpressed;
 
-    [SerializeField]
-    private Sprite Pressed, Unpressed;
-
-    [SerializeField]
-    private bool willBounceBack;
-
-    [SerializeField]
-    private AudioClip onClip, offClip;
-
+    [SerializeField] private Sprite Pressed, Unpressed;
+    [SerializeField] private bool willBounceBack;
+    [SerializeField] private AudioClip onClip, offClip;
     private SpriteRenderer spriteRenderer;
     private AudioSource audioSource;
     private int amountInContact;
 
-    private void Start()
+    private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         audioSource = GetComponent<AudioSource>();
+    }
+    private void Start()
+    {
         SwitchSpriteTo(Unpressed);
         amountInContact = 0;
     }

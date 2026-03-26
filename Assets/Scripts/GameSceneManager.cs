@@ -1,20 +1,12 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 public class GameSceneManager : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject transition;
-
-    [SerializeField]
-    private bool playTransitionIn, playTransitionOut;
-
-    [SerializeField]
-    private string nextSceneName;
-
+    [SerializeField] private GameObject transition;
+    [SerializeField] private bool playTransitionIn, playTransitionOut;
+    [SerializeField] private string nextSceneName;
     public UnityEvent FinishedTransitionIn;
-
     private Animator transitionAnimator;
 
     private void Start()
@@ -41,6 +33,6 @@ public class GameSceneManager : MonoBehaviour
 
     public void OnTransitionInDone()
     {
-        FinishedTransitionIn?.Invoke(); 
+        FinishedTransitionIn?.Invoke();
     }
 }

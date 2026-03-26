@@ -1,12 +1,9 @@
-using UnityEditor;
 using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
-    [SerializeField]
-    private ChickenController chickenController;
-    [SerializeField]
-    private EggGenerator eggGenerator;
+    [SerializeField] private ChickenController chickenController;
+    [SerializeField] private EggGenerator eggGenerator;
     private bool inputEnabled;
     private void Start()
     {
@@ -19,42 +16,12 @@ public class InputManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W))
             {
-                chickenController.Jump();   
+                chickenController.Jump();
             }
             ChickenHorizontalMovement();
             EggsInputUpdate();
-            // ChickenDash();
         }
     }
-    // private void ChickenDash()
-    // {
-    //     if (Input.GetKeyDown(KeyCode.J))
-    //     {
-    //         int x = 0;
-    //         int y = 0;
-
-    //         if (Input.GetKey(KeyCode.W))
-    //         {
-    //             y = 1;
-    //         }
-    //         if (Input.GetKey(KeyCode.S))
-    //         {
-    //             y = -1;
-    //         }
-    //         if (Input.GetKey(KeyCode.A))
-    //         {
-    //             x = -1;
-    //         }
-    //         if (Input.GetKey(KeyCode.D))
-    //         {
-    //             x = 1;
-    //         }
-    //         if (x != 0 || y != 0)
-    //         {
-    //             chickenController.Dash(x, y);
-    //         }
-    //     }
-    // }
     private void ChickenHorizontalMovement()
     {
         if (Input.GetKey(KeyCode.D))
@@ -83,7 +50,7 @@ public class InputManager : MonoBehaviour
         }
         else
         {
-            eggGenerator.Move(0); 
+            eggGenerator.Move(0);
         }
     }
 
