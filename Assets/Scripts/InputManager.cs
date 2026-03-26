@@ -16,26 +16,26 @@ public class InputManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W))
             {
-                chickenController.Jump();
+                //chickenController.Jump();
             }
-            ChickenHorizontalMovement();
+            // ChickenHorizontalMovement();
             EggsInputUpdate();
         }
     }
     private void ChickenHorizontalMovement()
     {
-        if (Input.GetKey(KeyCode.D))
-        {
-            chickenController.Move(1);
-        }
-        else if (Input.GetKey(KeyCode.A))
-        {
-            chickenController.Move(-1);
-        }
-        else
-        {
-            chickenController.StopHorizontalMovement();
-        }
+        // if (Input.GetKey(KeyCode.D))
+        // {
+        //     chickenController.Move(1);
+        // }
+        // else if (Input.GetKey(KeyCode.A))
+        // {
+        //     chickenController.Move(-1);
+        // }
+        // else
+        // {
+        //     //chickenController.StopHorizontalMovement();
+        // }
     }
 
     private void EggsInputUpdate()

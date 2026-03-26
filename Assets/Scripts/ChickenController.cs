@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class ChickenController : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class ChickenController : MonoBehaviour
     private ParticleSystem particle;
     private bool isMoving, canJump, canJumpAgain;
     private Vector3 startingLocation;
+    private GameInputActions inputs;
 
     private void Awake()
     {
@@ -23,8 +25,14 @@ public class ChickenController : MonoBehaviour
         rigidBody = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         particle = GetComponent<ParticleSystem>();
+        inputs = new GameInputActions();
     }
     private void Start()
+    {
+        ResetToStart();
+    }
+
+    public void ResetToStart()
     {
         isMoving = false;
         canJump = true;
@@ -32,53 +40,75 @@ public class ChickenController : MonoBehaviour
         startingLocation = transform.position;
     }
 
+    private void OnEnable()
+    {
+        inputs.Enable();
+        inputs.Chicken.Jump.performed += Jump;
+        inputs.Chicken.Move.performed += Move;
+        inputs.Chicken.Move.canceled += StopHorizontalMovement;
+    }
+
+    private void OnDisable()
+    {
+        inputs.Chicken.Jump.performed -= Jump;
+        inputs.Chicken.Move.performed -= Move;
+        inputs.Chicken.Move.canceled -= StopHorizontalMovement;
+        inputs.Disable();
+    }
+
     private void Update()
     {
         // Slow down to stop player if not moving
         if (!isMoving)
         {
-            LerpCurrentHorizontalVelocityTo(0f);
+            LerpCurrentHorizontalVelocityTo(0f, returnToZeroVelocitySpeed);
             return;
         }
-
         // Slow down player to horizontalSpeed if going too fast
         if (Mathf.Abs(rigidBody.linearVelocityX) > horizontalSpeed)
-        {
-            LerpCurrentHorizontalVelocityTo(horizontalSpeed);
-        }
+            LerpCurrentHorizontalVelocityTo(horizontalSpeed, returnToNormalVelocitySpeed);
+
     }
 
     // Lerp the player's current horizontal velocity to val
-    private void LerpCurrentHorizontalVelocityTo(float val)
+    private void LerpCurrentHorizontalVelocityTo(float val, float returnSpeed)
     {
         rigidBody.linearVelocityX = Mathf.Sign(rigidBody.linearVelocityX) *
                                        Mathf.Lerp(Mathf.Abs(rigidBody.linearVelocityX),
                                                   val,
-                                                  returnToNormalVelocitySpeed * Time.deltaTime);
+                                                  returnSpeed * Time.deltaTime);
     }
 
-    public void Move(int x)
+    // Moves by setting horiztonal velocity
+    public void Move(InputAction.CallbackContext context)
     {
+        int x = (int)context.ReadValue<float>();
+
         if (Mathf.Abs(rigidBody.linearVelocityX) < horizontalSpeed
             || Mathf.Sign(rigidBody.linearVelocityX) != Mathf.Sign(x))
             rigidBody.linearVelocityX = x * horizontalSpeed;
 
         isMoving = true;
+
+        // Ensure rebirth animation finishes
         if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Rebirth"))
             animator.Play("Walking");
+
+        // Flip sprite according to move direction
         if (x == -1)
             spriteRenderer.flipX = true;
         if (x == 1)
             spriteRenderer.flipX = false;
     }
-    public void StopHorizontalMovement()
+
+    public void StopHorizontalMovement(InputAction.CallbackContext context)
     {
         isMoving = false;
         if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Rebirth"))
             animator.Play("Idle");
     }
 
-    public void Jump()
+    public void Jump(InputAction.CallbackContext context)
     {
         if (TryFirstJump()) return;
         if (TrySecondJump()) return;
@@ -160,7 +190,7 @@ public class ChickenController : MonoBehaviour
 
     public void BackToSpawnPoint()
     {
-        transform.position = startingLocation;
+        ResetToStart();
     }
 
     // Play one audio clip from the clips array
