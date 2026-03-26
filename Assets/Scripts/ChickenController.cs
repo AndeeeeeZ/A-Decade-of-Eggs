@@ -2,19 +2,11 @@ using UnityEngine;
 
 public class ChickenController : MonoBehaviour
 {
-    [SerializeField]
-    private bool Debugging;
-    [SerializeField]
-    private EggGenerator eggGenerator;
-
-    [SerializeField]
-    private AudioClip[] jumpClip, dashClip, dieClip;
-
-    [SerializeField]
-    private Transform spawnPoint;
-
-    [SerializeField]
-    private float jumpForce, horizontalSpeed, dashSpeed, returnToNormalVelocitySpeed, returnToZeroVelocitySpeed;
+    [SerializeField] private bool Debugging;
+    [SerializeField] private EggGenerator eggGenerator;
+    [SerializeField] private AudioClip[] jumpClip, dashClip, dieClip;
+    [SerializeField] private Transform spawnPoint;
+    [SerializeField] private float jumpForce, horizontalSpeed, dashSpeed, returnToNormalVelocitySpeed, returnToZeroVelocitySpeed;
 
     private AudioSource audioSource;
     private Animator animator;
@@ -24,13 +16,16 @@ public class ChickenController : MonoBehaviour
     private bool isMoving, canJump, canJumpAgain;
     private Vector3 startingLocation;
 
-    private void Start()
+    private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
         rigidBody = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         particle = GetComponent<ParticleSystem>();
+    }
+    private void Start()
+    {
         isMoving = false;
         canJump = true;
         canJumpAgain = true;
@@ -39,23 +34,27 @@ public class ChickenController : MonoBehaviour
 
     private void Update()
     {
-        if (isMoving)
+        // Slow down to stop player if not moving
+        if (!isMoving)
         {
-            if (Mathf.Abs(rigidBody.linearVelocityX) > horizontalSpeed)
-            {
-                rigidBody.linearVelocityX = Mathf.Sign(rigidBody.linearVelocityX) *
-                                            Mathf.Lerp(Mathf.Abs(rigidBody.linearVelocityX),
-                                                       horizontalSpeed,
-                                                       returnToNormalVelocitySpeed * Time.deltaTime);
-            }
+            LerpCurrentHorizontalVelocityTo(0f);
+            return;
         }
-        else
+
+        // Slow down player to horizontalSpeed if going too fast
+        if (Mathf.Abs(rigidBody.linearVelocityX) > horizontalSpeed)
         {
-            rigidBody.linearVelocityX = Mathf.Sign(rigidBody.linearVelocityX) *
-                                            Mathf.Lerp(Mathf.Abs(rigidBody.linearVelocityX),
-                                                       0f,
-                                                       returnToZeroVelocitySpeed * Time.deltaTime);
+            LerpCurrentHorizontalVelocityTo(horizontalSpeed);
         }
+    }
+
+    // Lerp the player's current horizontal velocity to val
+    private void LerpCurrentHorizontalVelocityTo(float val)
+    {
+        rigidBody.linearVelocityX = Mathf.Sign(rigidBody.linearVelocityX) *
+                                       Mathf.Lerp(Mathf.Abs(rigidBody.linearVelocityX),
+                                                  val,
+                                                  returnToNormalVelocitySpeed * Time.deltaTime);
     }
 
     public void Move(int x)
@@ -63,6 +62,7 @@ public class ChickenController : MonoBehaviour
         if (Mathf.Abs(rigidBody.linearVelocityX) < horizontalSpeed
             || Mathf.Sign(rigidBody.linearVelocityX) != Mathf.Sign(x))
             rigidBody.linearVelocityX = x * horizontalSpeed;
+
         isMoving = true;
         if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Rebirth"))
             animator.Play("Walking");
@@ -80,33 +80,45 @@ public class ChickenController : MonoBehaviour
 
     public void Jump()
     {
-        if (canJump)
-        {
-            PerformJump();
-            PlayOneFrom(jumpClip);
-            canJump = false;
-        }
-        else if (canJumpAgain)
-        {
-            if (eggGenerator.HaveEggLeft())
-            {
-                PerformJump();
-                eggGenerator.ProduceEgg(spawnPoint.position);
-                PlayOneFrom(dashClip);
-                particle.Play();
-            }
-            else
-            {
-                if (Debugging)
-                    Debug.LogWarning("No more egg available");
-            }
-            canJumpAgain = false;
-        }
-        else
+        if (TryFirstJump()) return;
+        if (TrySecondJump()) return;
+
+        if (Debugging)
+            Debug.LogWarning("Player can't jump again");
+    }
+
+    private bool TryFirstJump()
+    {
+        if (!canJump) return false;
+
+        PerformJump();
+        PlayOneFrom(jumpClip);
+        canJump = false;
+        return true;
+    }
+
+    // Can only jump again if haven't second jumped yet 
+    // And if there is eggs left 
+    private bool TrySecondJump()
+    {
+        if (!canJumpAgain) return false;
+
+        if (!eggGenerator.HaveEggLeft())
         {
             if (Debugging)
-                Debug.LogWarning("Player can't jump again");
+                Debug.LogWarning("No more egg available");
+
+            canJumpAgain = false;
+            return false;
         }
+
+        PerformJump();
+        eggGenerator.ProduceEgg(spawnPoint.position);
+        PlayOneFrom(dashClip); // Note this is using dashClip instead of jumpClip
+        particle.Play();
+
+        canJumpAgain = false;
+        return true;
     }
 
     private void PerformJump()
@@ -117,12 +129,15 @@ public class ChickenController : MonoBehaviour
 
     public void OnDie()
     {
+        // Respawn at the start location if there is no eggs left
+        // Respawn at the last egg if one exists
         if (eggGenerator.GetCurrentEggAmount() == 0)
             BackToSpawnPoint();
         else
         {
             animator.Play("Rebirth");
             transform.position = eggGenerator.GetLastEggPosition();
+            eggGenerator.RemoveAllEggs();
         }
 
         rigidBody.linearVelocity = Vector2.zero;

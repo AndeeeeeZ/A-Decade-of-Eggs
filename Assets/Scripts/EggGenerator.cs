@@ -38,7 +38,7 @@ public class EggGenerator : MonoBehaviour
         UpdateEggCountIndicator();
     }
 
-    // Get last egg's position and destroy all eggs
+    // Get last egg's position
     public Vector3 GetLastEggPosition()
     {
         if (Eggs.Count == 0)
@@ -48,8 +48,6 @@ public class EggGenerator : MonoBehaviour
         }
         GameObject lastEgg = Eggs[Eggs.Count - 1];
         Vector3 pos = lastEgg.transform.position;
-
-        RemoveAllEggs();
         return pos;
     }
 
