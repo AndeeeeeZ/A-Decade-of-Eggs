@@ -3457,7 +3457,7 @@ MonoBehaviour:
   transition: {fileID: 1331543175}
   playTransitionIn: 1
   playTransitionOut: 1
-  nextSceneName: Level2
+  nextSceneName: Level1.1
   FinishedTransitionIn:
     m_PersistentCalls:
       m_Calls:
