@@ -14,11 +14,11 @@ public class EggGenerator : MonoBehaviour
     [SerializeField] private Sprite[] eggCountSprites;
     private int currentEggAmount;
     private List<GameObject> Eggs = new List<GameObject>();
-    private GameInputActions inputs; 
+    private GameInputActions inputs;
 
     private void Awake()
     {
-        inputs = new GameInputActions(); 
+        inputs = new GameInputActions();
     }
 
     private void Start()
@@ -28,16 +28,16 @@ public class EggGenerator : MonoBehaviour
 
     private void OnEnable()
     {
-        inputs.Enable(); 
-        inputs.Eggs.Move.performed += Move; 
-        inputs.Eggs.Move.canceled += Move; 
+        inputs.Enable();
+        inputs.Eggs.Move.performed += Move;
+        inputs.Eggs.Move.canceled += Move;
     }
 
     private void OnDisable()
     {
         inputs.Eggs.Move.performed -= Move;
-        inputs.Eggs.Move.canceled -= Move; 
-        inputs.Disable(); 
+        inputs.Eggs.Move.canceled -= Move;
+        inputs.Disable();
     }
 
     public void ProduceEgg(Vector3 spawnLocation)
@@ -50,6 +50,11 @@ public class EggGenerator : MonoBehaviour
         GameObject egg = Instantiate(EggPrefab, spawnLocation, Quaternion.identity, EggParent.transform);
         Eggs.Add(egg);
         currentEggAmount++;
+
+        // Update movement for the new egg
+        // Since movement is only applied on buttom presses
+        int moveInput = (int)inputs.Eggs.Move.ReadValue<float>();
+        egg.GetComponent<EggController>().Move(moveInput);
 
         UpdateEggCountIndicator();
     }
@@ -66,6 +71,18 @@ public class EggGenerator : MonoBehaviour
         Vector3 pos = lastEgg.transform.position;
         return pos;
     }
+    
+    // Move all eggs together
+    public void Move(InputAction.CallbackContext context)
+    {
+        int x = (int)context.ReadValue<float>();
+
+        for (int i = 0; i < Eggs.Count(); i++)
+        {
+            Eggs[i].GetComponent<EggController>().Move(x);
+        }
+    }
+
 
     public void RemoveAllEggs()
     {
@@ -88,18 +105,6 @@ public class EggGenerator : MonoBehaviour
     {
         return currentEggAmount;
     }
-
-    // Move all eggs together
-    public void Move(InputAction.CallbackContext context)
-    {
-        int x = (int) context.ReadValue<float>(); 
-
-        for (int i = 0; i < Eggs.Count(); i++)
-        {
-            Eggs[i].GetComponent<EggController>().Move(x);
-        }
-    }
-
     private void UpdateEggCountIndicator()
     {
         if (eggCountIndicator != null)

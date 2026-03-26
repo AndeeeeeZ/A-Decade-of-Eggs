@@ -6,6 +6,7 @@ public class EggController : MonoBehaviour
     private Rigidbody2D rigidBody2D;
     private SpriteRenderer spriteRenderer;
     private Color originalColor;
+    private int moveInput; 
 
     private void Awake()
     {
@@ -19,9 +20,14 @@ public class EggController : MonoBehaviour
         MarkAsLastEgg();
     }
 
+    private void Update()
+    {
+        rigidBody2D.linearVelocityX = moveInput * eggSpeed;
+    }
+
     public void Move(int x)
     {
-        rigidBody2D.linearVelocityX = x * eggSpeed;
+        moveInput = x; 
     }
 
     public void MarkAsLastEgg()

@@ -21,6 +21,7 @@ public class ChickenController : MonoBehaviour
     private bool isMoving, canJump, canJumpAgain;
     private Vector3 startingLocation;
     private GameInputActions inputs;
+    private float moveInput;
 
     private void Awake()
     {
@@ -33,12 +34,13 @@ public class ChickenController : MonoBehaviour
     }
     private void Start()
     {
-        startingLocation = transform.position; 
+        startingLocation = transform.position;
         ResetToStart();
     }
 
     public void ResetToStart()
     {
+        moveInput = 0f;
         isMoving = false;
         canJump = true;
         canJumpAgain = true;
@@ -69,10 +71,22 @@ public class ChickenController : MonoBehaviour
             LerpCurrentHorizontalVelocityTo(0f, returnToZeroVelocitySpeed);
             return;
         }
+
         // Slow down player to horizontalSpeed if going too fast
         if (Mathf.Abs(rigidBody.linearVelocityX) > horizontalSpeed)
             LerpCurrentHorizontalVelocityTo(horizontalSpeed, returnToNormalVelocitySpeed);
 
+        // If player is slower than horizontalSpeed
+        // Or if player changed direction
+        // Then set horizontal velocity
+        if (Mathf.Abs(rigidBody.linearVelocityX) < horizontalSpeed
+            || Mathf.Sign(rigidBody.linearVelocityX) != Mathf.Sign(moveInput))
+        {
+            rigidBody.linearVelocityX = moveInput * horizontalSpeed;
+        }
+
+        UpdateSpriteDirection();
+        UpdateAnimation(); 
     }
 
     // Lerp the player's current horizontal velocity to val
@@ -83,37 +97,36 @@ public class ChickenController : MonoBehaviour
                                                   val,
                                                   returnSpeed * Time.deltaTime);
     }
-
-    // Moves by setting horiztonal velocity
-    public void Move(InputAction.CallbackContext context)
+    private void UpdateAnimation()
     {
-        int x = (int)context.ReadValue<float>();
+        // Don't interrupt rebirth animation
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Rebirth"))
+            return;
 
-        if (Mathf.Abs(rigidBody.linearVelocityX) < horizontalSpeed
-            || Mathf.Sign(rigidBody.linearVelocityX) != Mathf.Sign(x))
-            rigidBody.linearVelocityX = x * horizontalSpeed;
-
+        if (Mathf.Approximately(moveInput, 0f))
+            animator.Play("Idle");
+        else
+            animator.Play("Walking");
+    }
+    // Moves by setting horiztonal velocity
+    private void Move(InputAction.CallbackContext context)
+    {
+        moveInput = context.ReadValue<float>();
         isMoving = true;
-
         // Ensure rebirth animation finishes
         if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Rebirth"))
             animator.Play("Walking");
-
-        // Flip sprite according to move direction
-        if (x == -1)
-            spriteRenderer.flipX = true;
-        if (x == 1)
-            spriteRenderer.flipX = false;
     }
 
-    public void StopHorizontalMovement(InputAction.CallbackContext context)
+    private void StopHorizontalMovement(InputAction.CallbackContext context)
     {
+        moveInput = 0f;
         isMoving = false;
         if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Rebirth"))
             animator.Play("Idle");
     }
 
-    public void Jump(InputAction.CallbackContext context)
+    private void Jump(InputAction.CallbackContext context)
     {
         if (TryFirstJump()) return;
         if (TrySecondJump()) return;
@@ -162,12 +175,20 @@ public class ChickenController : MonoBehaviour
         rigidBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
     }
 
+    private void UpdateSpriteDirection()
+    {
+        if (moveInput < 0)
+            spriteRenderer.flipX = true;
+        if (moveInput > 0)
+            spriteRenderer.flipX = false;
+    }
+
     public void OnDie()
     {
         // Respawn at the start location if there is no eggs left
         // Respawn at the last egg if one exists
         if (eggGenerator.GetCurrentEggAmount() == 0)
-            ResetToStart(); 
+            ResetToStart();
         else
         {
             animator.Play("Rebirth");
