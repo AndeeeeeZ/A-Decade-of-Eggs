@@ -1288,8 +1288,8 @@ Tilemap:
   - first: {x: -2, y: -6, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 6
-      m_TileSpriteIndex: 6
+      m_TileIndex: 13
+      m_TileSpriteIndex: 13
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1298,8 +1298,8 @@ Tilemap:
   - first: {x: -1, y: -6, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 6
-      m_TileSpriteIndex: 6
+      m_TileIndex: 13
+      m_TileSpriteIndex: 13
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1308,8 +1308,8 @@ Tilemap:
   - first: {x: 0, y: -6, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 14
-      m_TileSpriteIndex: 14
+      m_TileIndex: 6
+      m_TileSpriteIndex: 6
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1438,9 +1438,9 @@ Tilemap:
   - first: {x: -9, y: -5, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 6
-      m_TileSpriteIndex: 6
-      m_TileMatrixIndex: 0
+      m_TileIndex: 22
+      m_TileSpriteIndex: 22
+      m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
@@ -1468,9 +1468,9 @@ Tilemap:
   - first: {x: -2, y: -5, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 6
-      m_TileSpriteIndex: 6
-      m_TileMatrixIndex: 0
+      m_TileIndex: 13
+      m_TileSpriteIndex: 13
+      m_TileMatrixIndex: 2
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
@@ -1478,9 +1478,9 @@ Tilemap:
   - first: {x: -1, y: -5, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 6
-      m_TileSpriteIndex: 6
-      m_TileMatrixIndex: 0
+      m_TileIndex: 13
+      m_TileSpriteIndex: 13
+      m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
@@ -2529,7 +2529,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 0d4066fb5ed0c4f44b986c0b4adcd331, type: 2}
   - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: 63d982e1b9862a04283e0167b637647b, type: 2}
-  - m_RefCount: 65
+  - m_RefCount: 61
     m_Data: {fileID: 11400000, guid: b590dc7d91258854aa17da8c9adf3656, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: c6f3d9de9ee6a5a41ad03604d5022c20, type: 2}
@@ -2543,9 +2543,9 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: bd36cb6854403994f80ada9be70a441d, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 132a6820ab60aa349a9650b81e899eca, type: 2}
-  - m_RefCount: 2
+  - m_RefCount: 6
     m_Data: {fileID: 11400000, guid: 59cade19af70fe844a79236247c04c75, type: 2}
-  - m_RefCount: 2
+  - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: e0068dc78bd9da6438efe4e3c2990c39, type: 2}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: f051e112448c3ed499ef6baaf47c7d6e, type: 2}
@@ -2561,6 +2561,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: f5dd4a09f3cc36c44b62a27a3466eebb, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 4804892d6048228478bf195fccc15583, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: a1482c28c09830e48a1d70aaa7b1a013, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: -2119354662, guid: e37527ade8cb12949a4f3448d01ddd05, type: 3}
@@ -2574,7 +2576,7 @@ Tilemap:
     m_Data: {fileID: -1214383039, guid: e4c73e73de4072b449afbddaf0bab384, type: 3}
   - m_RefCount: 4
     m_Data: {fileID: 370472728, guid: e4c73e73de4072b449afbddaf0bab384, type: 3}
-  - m_RefCount: 65
+  - m_RefCount: 61
     m_Data: {fileID: -2028603398, guid: e4c73e73de4072b449afbddaf0bab384, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 2133091138, guid: e37527ade8cb12949a4f3448d01ddd05, type: 3}
@@ -2588,9 +2590,9 @@ Tilemap:
     m_Data: {fileID: -831756949, guid: e37527ade8cb12949a4f3448d01ddd05, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -3538612736162313020, guid: e37527ade8cb12949a4f3448d01ddd05, type: 3}
-  - m_RefCount: 2
+  - m_RefCount: 6
     m_Data: {fileID: -40517140, guid: e37527ade8cb12949a4f3448d01ddd05, type: 3}
-  - m_RefCount: 2
+  - m_RefCount: 1
     m_Data: {fileID: -351450211, guid: e37527ade8cb12949a4f3448d01ddd05, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: -2104538176, guid: e37527ade8cb12949a4f3448d01ddd05, type: 3}
@@ -2606,8 +2608,10 @@ Tilemap:
     m_Data: {fileID: 5532657728113351563, guid: e37527ade8cb12949a4f3448d01ddd05, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -531578819, guid: e37527ade8cb12949a4f3448d01ddd05, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -175833915, guid: e37527ade8cb12949a4f3448d01ddd05, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 132
+  - m_RefCount: 129
     m_Data:
       e00: 1
       e01: 0
@@ -2615,6 +2619,42 @@ Tilemap:
       e03: 0
       e10: 0
       e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - m_RefCount: 2
+    m_Data:
+      e00: 0
+      e01: -1
+      e02: 0
+      e03: 0
+      e10: 1
+      e11: 0
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - m_RefCount: 1
+    m_Data:
+      e00: 0
+      e01: 1
+      e02: 0
+      e03: 0
+      e10: -1
+      e11: 0
       e12: 0
       e13: 0
       e20: 0
@@ -3049,6 +3089,142 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &969137255
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 969137256}
+  - component: {fileID: 969137258}
+  - component: {fileID: 969137257}
+  m_Layer: 5
+  m_Name: Text (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &969137256
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969137255}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1097500650}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -398, y: 231.81}
+  m_SizeDelta: {x: 491.75, y: 174.28}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &969137257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969137255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: WHENEVER YOU DIE, YOU'LL RESPAWN AT THE LAST EGG YOU LAID!
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 27f9216e72a2fb4469b6164585c3d9c9, type: 2}
+  m_sharedMaterial: {fileID: 6319452051135739162, guid: 27f9216e72a2fb4469b6164585c3d9c9, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 61.64
+  m_fontSizeBase: 61.64
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: -26.32
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &969137258
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969137255}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1093304657
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3110,6 +3286,142 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c4a796fad4c69c4a856a4e20e589962, type: 3}
+--- !u!1 &1097421573
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1097421574}
+  - component: {fileID: 1097421576}
+  - component: {fileID: 1097421575}
+  m_Layer: 5
+  m_Name: Text (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1097421574
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097421573}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1097500650}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 360, y: -374.73}
+  m_SizeDelta: {x: 720, y: 60.56}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1097421575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097421573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'TIP: THE LAST EGG IS ALWAYS MARKED RED'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 27f9216e72a2fb4469b6164585c3d9c9, type: 2}
+  m_sharedMaterial: {fileID: 6319452051135739162, guid: 27f9216e72a2fb4469b6164585c3d9c9, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4285150599
+  m_fontColor: {r: 0.5283019, g: 0.20766579, b: 0.4140157, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 50
+  m_fontSizeBase: 50
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: -26.32
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1097421576
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097421573}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1097500649
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3204,33 +3516,64 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2852394354342481329, guid: 2d23cb8cdce60134faa475d58d4725a8, type: 3}
       propertyPath: m_text
-      value: "Chicken will respawn...\n\t...at the last egg"
+      value: BE CAREFUL!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2852394354342481329, guid: 2d23cb8cdce60134faa475d58d4725a8, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.7282494
+      objectReference: {fileID: 0}
+    - target: {fileID: 2852394354342481329, guid: 2d23cb8cdce60134faa475d58d4725a8, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.7201257
+      objectReference: {fileID: 0}
+    - target: {fileID: 2852394354342481329, guid: 2d23cb8cdce60134faa475d58d4725a8, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2852394354342481329, guid: 2d23cb8cdce60134faa475d58d4725a8, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4290427135
+      objectReference: {fileID: 0}
+    - target: {fileID: 2852394354342481329, guid: 2d23cb8cdce60134faa475d58d4725a8, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6513311888908119640, guid: 2d23cb8cdce60134faa475d58d4725a8, type: 3}
       propertyPath: m_Name
-      value: Respawn
+      value: Text
       objectReference: {fileID: 0}
     - target: {fileID: 6755962014303159816, guid: 2d23cb8cdce60134faa475d58d4725a8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 470.85
+      value: 250.22
       objectReference: {fileID: 0}
     - target: {fileID: 6755962014303159816, guid: 2d23cb8cdce60134faa475d58d4725a8, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 106.93
+      value: 76.74
       objectReference: {fileID: 0}
     - target: {fileID: 6755962014303159816, guid: 2d23cb8cdce60134faa475d58d4725a8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 469
+      value: -337
       objectReference: {fileID: 0}
     - target: {fileID: 6755962014303159816, guid: 2d23cb8cdce60134faa475d58d4725a8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -339
+      value: -249
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1637456193410221733, guid: 2d23cb8cdce60134faa475d58d4725a8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1097421574}
+    - targetCorrespondingSourceObject: {fileID: 1637456193410221733, guid: 2d23cb8cdce60134faa475d58d4725a8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 969137256}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d23cb8cdce60134faa475d58d4725a8, type: 3}
+--- !u!224 &1097500650 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1637456193410221733, guid: 2d23cb8cdce60134faa475d58d4725a8, type: 3}
+  m_PrefabInstance: {fileID: 1097500649}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1123782269
 GameObject:
   m_ObjectHideFlags: 0
