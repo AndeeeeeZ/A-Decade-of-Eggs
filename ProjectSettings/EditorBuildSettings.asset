@@ -8,18 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Title.unity
     guid: 475b7a6cf9268c045b0b91356728d4a3
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/IntroAnimation.unity
+    guid: ee8ebc573d2591f4a987d9d144e9df2e
   - enabled: 1
     path: Assets/Scenes/Tutorial1.unity
     guid: b26ec0e6f41bed947a78bd5f4ca1b840
   - enabled: 1
     path: Assets/Scenes/Tutorial2.unity
     guid: 3b125e2a745db5b4d83c08a0d87334b0
-  - enabled: 1
-    path: Assets/Scenes/IntroAnimation.unity
-    guid: ee8ebc573d2591f4a987d9d144e9df2e
   - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: f695558213f1fdc4486df6b51972b032
@@ -42,11 +39,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Level6.unity
     guid: 45cfbd5c37dd8a24f8f4d434ba0468b3
   - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: b607a5f1ee37e204b9312de6cc06d0aa
+  - enabled: 1
     path: Assets/Scenes/LevelFunny.unity
     guid: 5ae094d6936a5c24889b3ce9ae6b12e6
   - enabled: 1
-    path: Assets/Scenes/End.unity
-    guid: b607a5f1ee37e204b9312de6cc06d0aa
+    path: Assets/Scenes/LevelGallery.unity
+    guid: c80a9eafa8cba6a4eace995f3ef63e34
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

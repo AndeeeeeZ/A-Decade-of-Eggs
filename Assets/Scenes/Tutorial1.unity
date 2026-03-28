@@ -3827,6 +3827,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BackgroundMusic
       objectReference: {fileID: 0}
+    - target: {fileID: 171701618042908955, guid: 0c4a796fad4c69c4a856a4e20e589962, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6231494643449740528, guid: 0c4a796fad4c69c4a856a4e20e589962, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.5569777
@@ -3887,7 +3891,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6842873575726124447}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 922384e034eed7044aa9457e23b71f61, type: 3}
   m_Name: 

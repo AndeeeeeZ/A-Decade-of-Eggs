@@ -35,4 +35,9 @@ public class GameSceneManager : MonoBehaviour
     {
         FinishedTransitionIn?.Invoke();
     }
+
+    public void SetNextScene(string s)
+    {
+        nextSceneName = s; 
+    }
 }
