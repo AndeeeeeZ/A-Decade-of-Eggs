@@ -58,4 +58,13 @@ public class ButtonController : MonoBehaviour
         if (s != null)
             spriteRenderer.sprite = s;
     }
+
+    // Used for resetting button when restart
+    // Only for buttons that would not bounce back 
+    // Restart need to invoke this function for all buttons that would not bounce back
+    public void ResetButton()
+    {
+        OnButtonUnpressed?.Invoke();
+        SwitchSpriteTo(Unpressed);
+    }
 }
